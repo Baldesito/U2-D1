@@ -17,7 +17,7 @@ hr {
   display: none;
 } /* rimuove l'elemento */
 /* per schermi grandi */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1760px) {
   body {
     font-family: Poppins, "Helvetica Neue", sans-serif;
     font-size: 1.4rem;
@@ -27,7 +27,7 @@ hr {
   }
   header {
     display: inline-block;
-    width: 1200px;
+    width: 100%;
     background: rgb(0, 160, 198);
     background: linear-gradient(
       180deg,
@@ -210,6 +210,28 @@ hr {
     display: flex;
     position: relative;
   }
+  /* ELEMENTI NELL' ASIDE */
+  aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+  aside div {
+    width: 100%;
+    display: inline-block;
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+  aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+  }
 }
 
 /* MAIN */
@@ -307,6 +329,14 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+.vid {
+  display: inline-block;
+  width: 50%;
+}
+.for1 {
+  display: inline-block;
+  margin-left: 400px;
+}
 input {
   padding: 5px;
   border: 0;
@@ -322,6 +352,7 @@ button {
 }
 
 /* ELEMENTI NELL' ASIDE */
+
 aside h2 {
   text-align: center;
   color: #333;
@@ -331,10 +362,12 @@ aside h2 {
   margin-bottom: 1em;
 }
 aside div {
+  display: inline-block;
   background-color: #e3e3e3;
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
+  width: 33%;
 }
 aside div p:last-child {
   margin-bottom: 0;
